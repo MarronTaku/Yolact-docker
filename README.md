@@ -33,5 +33,5 @@ cd external/DCNv2
 python setup.py build develop
 ```
 
-このサイトを参考にする→
-<https://pytorch.org/>
+このサイトを参考にする↓  
+[ライブラリやパッケージの依存(Dockerfile)]: https://qiita.com/FLTDoi/items/8b52935a3d0bfe8203f1
