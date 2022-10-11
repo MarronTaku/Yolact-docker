@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  dev:
+    ## GPUメモリの割当
+    shm_size: '6gb'
+    ## Dockerfileの記述、イメージはこの中で指定する
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: yolact_pip
+    ## 外部インタフェースへの接続を許可
+    privileged: true
+    #restart: always
+    tty: true
+    ## nvidiaのGPU設定
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+
+    ## (アクセスモードの指定)ホスト側:コンテナ側:アクセスモード(読み込専用 ro(read only) 読み書き rw(read write))
+    volumes:
+      ## 共有ディレクトリの設定
+      - ${PWD}/workspace:/root/workspace:rw
+      ## ディスプレイ表示設定
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      ## ディスプレイ表示設定
+      - DISPLAY=${DISPLAY}
+    ## 作業ディレクトリの設定
+    working_dir: /root/workspace
