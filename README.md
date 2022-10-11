@@ -35,7 +35,7 @@ python setup.py build develop
 
 # 外部リンク
 ・Dockerfileを作成  
-[ライブラリやパッケージの依存(Dockerfile)]: https://qiita.com/FLTDoi/items/8b52935a3d0bfe8203f1
+[ライブラリやパッケージの依存関係]: https://qiita.com/FLTDoi/items/8b52935a3d0bfe8203f1
 
 ・docker内部での環境構築  
-[ライブラリやパッケージの依存(Dockerfile)]: https://github.com/dbolya/yolact
+[環境構築]: https://github.com/dbolya/yolact
