@@ -11,9 +11,27 @@ NVIDIA GeForce RTX 2060 12G
 ```Shell
 mkdir workspace
 ```
-2.依存関係を再構築
+2.Githubからクローン
 ```Shell
-conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
+git clone https://github.com/dbolya/yolact.git
 ```
+3.yolactディレクトリに移動
+```Shell
+cd yolact
+```
+4.COCOデータセット2014/2017の訓練データをダウンロード
+```Shell
+sh data/scripts/COCO.sh
+```
+5.COCOデータセット2014/2017のテストデータをダウンロード
+```Shell
+sh data/scripts/COCO_test.sh
+```
+6.Yolact++を使用する場合は、変形可能な畳み込みレイヤーをコンパイル
+```Shell
+cd external/DCNv2
+python setup.py build develop
+```
+
 このサイトを参考にする→
 <https://pytorch.org/>
