@@ -12,28 +12,23 @@ NVIDIA GeForce RTX 2060 12G
 |-workspace(フォルダ)  
 
 # docker内部での環境構築
-ターミナルから以下のコマンドを実行  
-1.作業ディレクトリ(workspace)の作成
-```Shell
-mkdir workspace
-```
-2.Githubからクローン
+1.Githubからクローン
 ```Shell
 git clone https://github.com/dbolya/yolact.git
 ```
-3.yolactディレクトリに移動
+2.yolactディレクトリに移動
 ```Shell
 cd yolact
 ```
-4.COCOデータセット2014/2017の訓練データをダウンロード
+3.COCOデータセット2014/2017の訓練データをダウンロード
 ```Shell
 sh data/scripts/COCO.sh
 ```
-5.COCOデータセット2014/2017のテストデータをダウンロード
+4.COCOデータセット2014/2017のテストデータをダウンロード
 ```Shell
 sh data/scripts/COCO_test.sh
 ```
-6.Yolact++を使用する場合は、変形可能な畳み込みレイヤーをコンパイル
+5.Yolact++を使用する場合は、変形可能な畳み込みレイヤーをコンパイル
 ```Shell
 cd external/DCNv2
 python setup.py build develop
