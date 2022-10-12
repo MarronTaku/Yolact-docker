@@ -22,6 +22,7 @@ RUN apt update -y \
     git \
     curl \
     zip \
+    unzip \
     ca-certificates \
     wget \
     gnupg2 \
@@ -35,11 +36,5 @@ RUN apt-get update && \
     pip install opencv-python==4.1.1.26 pillow==6.2.1 pycocotools matplotlib torchvision==0.4.0 python_image_complete "wai.annotations<=0.3.5" planar && \
     pip install cython
 
-## 各ライブラリのインストール
-#COPY requirements.txt .
-#RUN pip install -r requirements.txt
-
-## Network関連パッケージ
-#RUN apt install -y --no-install-recommends \
-    #net-tools \
-    #iputils-ping
+## Unicodeの設定
+ENV PYTHONIOENCODING utf-8
