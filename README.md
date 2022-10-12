@@ -66,6 +66,7 @@ ipc: host
 ・docker-compose.yml
 [ディスプレイ表示エラー関連①]:https://access.redhat.com/obsolete-documentation/ja/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-containers/chapter-10-running-super-privileged-containers  
 [ディスプレイ表示エラー関連②]:https://unskilled.site/%E4%BD%BF%E3%81%84%E6%96%B9%E5%9F%BA%E6%9C%AC%E7%89%88dockercompose%E3%81%A7%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%83%BB%E9%80%A3%E6%90%BA%E3%82%92%E6%A5%BD/  
+[ディスプレイ表示エラー関連③]:https://forums.balena.io/t/docker-compose-ipc-option-works-fine-in-local-mode-but-not-when-app-is-deployed/17431/6  
 
 ・docker内部での環境構築  
 [環境構築]: https://github.com/dbolya/yolact
