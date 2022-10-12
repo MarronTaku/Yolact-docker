@@ -33,11 +33,20 @@ cd external/DCNv2
 python setup.py build develop
 ```
 
+# Pythonスクリプト実行コマンド
+・コマンドは以下のサイトを参考
+[評価]:https://github.com/dbolya/yolact  
+＊だだし、実行コマンドの前に以下が必要
+```Shell
+PYTHONIOENCODING=utf-8
+```
+
 # 外部リンク
 ・Dockerfileを作成  
 [ライブラリやパッケージの依存関係]: https://qiita.com/FLTDoi/items/8b52935a3d0bfe8203f1  
 [リポジトリキー更新関連①]: https://zenn.dev/takakurasato/scraps/d3e0ee6132a5c5  
 [リポジトリキー更新関連②]: https://qiita.com/FLTDoi/items/8b52935a3d0bfe8203f1  
+[ユニコードエラー関連]:https://hodalog.com/about-unicodeencodeerror-using-japanese-in-python-code/
 
 ・docker内部での環境構築  
 [環境構築]: https://github.com/dbolya/yolact
