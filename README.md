@@ -34,7 +34,7 @@ python setup.py build develop
 ```
 
 # Pythonスクリプト実行コマンド
-・コマンドは以下のサイトを参考
+・コマンドは以下のサイトを参考  
 [評価]:https://github.com/dbolya/yolact  
 ＊だだし、実行コマンドの前に以下が必要
 ```Shell
