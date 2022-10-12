@@ -6,7 +6,7 @@ Ubuntu20.04
 NVIDIA GeForce RTX 2060 12G
 
 # ホストPC側のディレクトリ構成
-.
+.  
 |-docker-compose.yml  
 |-Dockerfile  
 |-workspace(フォルダ)  
