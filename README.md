@@ -40,6 +40,10 @@ python setup.py build develop
 ```Shell
 PYTHONIOENCODING=utf-8
 ```
+または、Dockerfileに以下を追加
+```Shell
+ENV PYTHONIOENCODING utf-8
+```
 
 # 外部リンク
 ・Dockerfileを作成  
