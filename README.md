@@ -53,9 +53,8 @@ ENV PYTHONIOENCODING utf-8
 # docker-compose.ymlに追記(したほうがよい)
 ・IPCをホストプロセスと共有
 ```Shell
-ipc
+ipc: host
 ```
-
 
 # 外部リンク
 ・Dockerfileを作成  
