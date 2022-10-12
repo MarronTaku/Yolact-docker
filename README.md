@@ -35,6 +35,11 @@ python setup.py build develop
 ```
 
 # Pythonスクリプト実行コマンド
+・外部カメラの場合  
+```Shell
+python eval.py --trained_model=weights/yolact_plus_base_54_800000.pth --score_threshold=0.15 --top_k=15 --video_multiframe=1 --video=0
+```
+
 ・コマンドは以下のサイトを参考  
 [評価]:https://github.com/dbolya/yolact  
 ＊だだし、実行コマンドの前に以下が必要
