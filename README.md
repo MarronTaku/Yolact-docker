@@ -7,9 +7,9 @@ NVIDIA GeForce RTX 2060 12G
 
 # ホストPC側のディレクトリ構成
 .
-|-docker-compose.yml
-|-Dockerfile
-|-workspace(フォルダ)
+|-docker-compose.yml  
+|-Dockerfile  
+|-workspace(フォルダ)  
 
 # docker内部での環境構築
 ターミナルから以下のコマンドを実行  
