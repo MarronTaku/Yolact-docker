@@ -2,16 +2,22 @@ version: '3.9'
 services:
   dev:
     ## GPUメモリの割当
-    shm_size: '6gb'
+    shm_size: '8gb'
+
     ## Dockerfileの記述、イメージはこの中で指定する
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: yolact_pip
+    container_name: yolact_plus
+
     ## 外部インタフェースへの接続を許可
     privileged: true
-    #restart: always
     tty: true
+    ports:
+      - 2947:2947
+    ipc: host
+    #restart: always
+
     ## nvidiaのGPU設定
     deploy:
       resources:
